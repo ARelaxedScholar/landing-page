@@ -1,0 +1,42 @@
+body {
+	font-family: Roboto, sans-serif;
+}
+
+header, .hero-section {
+	background: #1f2937;
+}
+header {
+	display: flex;
+	justify-content: space-around;
+	height: 3em;
+}
+
+nav > ul {
+	color: #e5e7eb;
+	font-size: 18px;
+	gap: 1.5em;
+	display: flex;
+	justify-content: space-around;
+}
+
+.hero-section {
+	display: flex;	
+	justify-content: space-around;
+	height: 14em;
+	align-items:center;
+}
+
+.hero-section > div {
+	width: 550px;
+}
+
+.hero-section > p {
+	box-sizing: border-box;
+	display: block;
+	padding-top: 70px;
+	text-align: center;
+	color: white;
+	background: gray;
+	height: 150px;
+	width: 420px;
+}
