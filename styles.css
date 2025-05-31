@@ -47,4 +47,47 @@ nav > ul {
 	text-align: center;
 }
 
+.information > div {
+	display: flex;
+	margin-top: 40px;
+	justify-content: space-evenly;
+}
 
+.quote {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	background: gray;
+	color: white;
+	height: 500px;
+}
+
+#smexy {
+	display:flex;
+	flex-direction: column;
+}
+
+#smexy > *:nth-child(2) {
+	align-self: end;
+}
+
+.call-to-action {
+	box-sizing: border-box;
+	height: 250px;
+}
+
+.call-to-action-rectangle {
+	height: 140px;
+	border-radius: 5px;
+	background: blue;
+	color: white;
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
