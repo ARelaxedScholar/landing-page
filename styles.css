@@ -1,16 +1,109 @@
+:root {
+	/* For the headers */
+	--my-fonts: Roboto, sans-serif;
+	--hero-footer-color: #1f2937;
+	--hero-main-text-size: 48px;
+	--hero-main-text-color: #f9faf8;
+	--hero-main-text-weight: 900;
+	--hero-sec-text-size: 18px;
+	--hero-sec-text-color: #e5e7eb;
+	--header-logo-size: 24px;
+	--header-logo-color: #f9faf8;
+
+	/* For the information section */
+	--button-color: #3882f6;
+	--information-header-text-size: 36px;
+	--information-header-color-color: #1f2937;
+	--information-header-font-weight: 900;
+
+	/* For the quote section */
+	--quote-color: #e5e7eb;
+	--quote-text-size: 36px;
+	--quote-text-color: #1f2937;
+	--quote-style: itallic;
+}
+
 body {
 	font-family: Roboto, sans-serif;
 }
 
-header, .hero-section {
-	background: #1f2937;
-}
-header {
-	display: flex;
-	justify-content: space-around;
-	height: 3em;
+nav #logo {
+	justify-self: end;
 }
 
+nav ul {
+	justify-self: center;
+}
+
+header {
+	box-sizing: border-box;
+	padding-top: 10px;
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	justify-content: space-between;
+	height: 50px;
+}
+
+header > div {
+	grid-column: 2;
+	display: flex;
+	justify-content: space-between;
+}
+#logo {
+	font-size: var(--header-logo-size);
+	color: var(--header-logo-color);
+	font-weight: 900;
+	justify-self: center;
+}
+
+header, .hero-section, footer {
+	background: var(--hero-footer-color);
+}
+
+.hero-section{
+	display: flex;
+	grid-column: 2;
+	justify-content: space-between;
+}
+
+section#hero-section {
+	box-sizing: border-box;
+	padding-top: 70px;
+	display: grid;
+	gap: 3em;
+	grid-template-columns: 1fr 4fr 1fr;
+	justify-content: space-evenly;
+	background: var(--hero-footer-color);
+	height: 410px;
+}
+
+.hero-section > *:nth-child(1) {
+	margin-right: 75px;
+}
+
+.hero-section > *:nth-child(1)  h2 {
+	font-size: var(--hero-main-text-size);
+	color: var(--hero-main-text-color);
+	font-weight: var(--hero-main-text-weight);
+}
+
+.hero-section > *:nth-child(1) p {
+	font-size: var(--hero-sec-text-size);
+	color: var(--hero-sec-text-color);
+	margin-bottom: 10px;
+}
+
+.hero-section > *:nth-child(1) button {
+	background-color: var(--button-color);
+	font-weight: 700;
+	color: white;
+	width: 90px;
+	height: 30px;
+	padding: 15px 23pz;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+}
 nav > ul {
 	color: #e5e7eb;
 	font-size: 18px;
@@ -32,14 +125,16 @@ nav > ul {
 
 .hero-section > p {
 	box-sizing: border-box;
-	display: block;
-	padding-top: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	color: white;
 	background: gray;
-	height: 150px;
-	width: 420px;
+	height: 100%;
+	width: 100%;
 }
+
 
 .information {
 	height: 300px;
