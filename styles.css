@@ -177,10 +177,12 @@ nav > ul {
 	grid-template-columns: 1fr 2.3fr 1fr;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+	text-align: left;
 	position: relative;
-	background: gray;
-	color: white;
+	background: var(--quote-color);
+	color: var(--quote-text-color);
+	font-size: 36px;
+	font-style: italic;
 	height: 500px;
 }
 
@@ -194,6 +196,9 @@ nav > ul {
 
 #smexy > *:nth-child(2) {
 	align-self: end;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
 }
 
 .call-to-action {
