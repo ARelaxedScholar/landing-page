@@ -117,6 +117,18 @@ nav > ul {
 	justify-content: space-around;
 }
 
+nav a {
+	text-decoration: none;
+}
+
+nav a:link, a:visited {
+	color: #e5e7eb;
+}
+
+nav a:hover {
+	color: white;
+}
+
 .hero-section {
 	display: flex;	
 	justify-content: space-around;
@@ -242,4 +254,13 @@ nav > ul {
 	background-color: white;
 	border: 2px var(--button-color) solid;
 	color: var(--button-color);
+}
+
+footer {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: var(--hero-footer-color)
 }
